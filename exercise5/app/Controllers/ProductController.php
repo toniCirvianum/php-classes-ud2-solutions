@@ -15,7 +15,8 @@ class ProductController
         ];
 
         foreach ($products as $product) {
-            echo $product->showInfo() . PHP_EOL;
+            echo $product->showInfo();
+            echo "<br>";
         }
     }
 }

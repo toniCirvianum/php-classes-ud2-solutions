@@ -9,5 +9,23 @@ use App\Models\User;
 $product = new Product("Monitor", 199.90);
 $user = new User("Laura", "laura@email.com");
 
-echo $product->showInfo() . PHP_EOL;
-echo $user->showInfo() . PHP_EOL;
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Classes and namespaces</h1>
+    <p>
+        PRODUCT: <?=  $product->showInfo() ?>
+    </p>
+        <p>
+        USER: <?=  $product->showInfo() ?>
+    </p>
+</body>
+</html>
+

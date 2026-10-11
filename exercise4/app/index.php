@@ -10,5 +10,23 @@ use App\Models\DigitalProduct;
 $book = new PhysicalProduct("PHP Book", 30, 0.8);
 $course = new DigitalProduct("PHP Course", 50, 250);
 
-echo $book->showInfo() . PHP_EOL;
-echo $course->showInfo() . PHP_EOL;
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Inheritance</h1>
+    <p>
+        DIGITAL PRODUCT: <?=  $course->showInfo()?>
+    </p>
+        <p>
+        PHYSICAL PRODUCT: <?=  $book->showInfo()?>
+    </p>
+    
+</body>
+</html>
