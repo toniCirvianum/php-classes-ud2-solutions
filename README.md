@@ -13,8 +13,7 @@ docker compose up -d
 
 ```
 
-From the navigator
-
+Open from browser
 
 http://localhost:8088/exercise1
 http://localhost:8088/exercise2
