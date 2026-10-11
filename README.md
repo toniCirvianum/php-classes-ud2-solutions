@@ -13,9 +13,9 @@ docker compose up -d
 
 ```
 
-From the navigator
+Open url from the browser
 
-```bash
+
 (http://localhost:8088/exercise1)
 (http://localhost:8088/exercise2)
 (http://localhost:8088/exercise3)
@@ -23,5 +23,3 @@ From the navigator
 (http://localhost:8088/exercise5/app)
 (http://localhost:8088/exercise6/app)
 
-
-```
