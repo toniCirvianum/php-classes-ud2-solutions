@@ -2,25 +2,36 @@
 
 class Product
 {
-    public $name;
-    public $price;
-    public $category;
+    private $name;
+    private $price;
+    private $category;
 
     public function showInfo()
     {
         return $this->name . " - " . number_format($this->price, 2) . " EUR - " . $this->category;
     }
+
+    public function setPrice($price){
+        $this->price = $price;
+    }
+    public function setName($name){
+        $this->name = $name;
+    }
+
+        public function setCategory($cat){
+        $this->category = $cat;
+    }
 }
 
 $product1 = new Product();
-$product1->name = "Mechanical Keyboard";
-$product1->price = 59.90;
-$product1->category = "Peripherals";
+$product1->setName("Mechanical Keyboard");
+$product1->setPrice(59.90);
+$product1->setCategory("Peripherals");
 
 $product2 = new Product();
-$product2->name = "Gaming Mouse";
-$product2->price = 34.50;
-$product2->category = "Peripherals";
+$product2->setName("Gaming Mouse");
+$product2->setPrice(34.50);
+$product2->setCategory("Peripherals");
 
 ?>
 

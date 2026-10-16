@@ -15,6 +15,6 @@ class Product
 
     public function showInfo()
     {
-        return $this->name . " - " . number_format($this->price, 2) . " EUR";
+        return $this->name . " - " . $this->price;
     }
 }

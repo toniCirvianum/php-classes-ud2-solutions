@@ -10,6 +10,9 @@ class DigitalProduct extends Product
     {
         parent::__construct($name, $price);
         $this->fileSize = $fileSize;
+
+        // $this-> $name = $name;
+        // $this-> price = $price;
     }
 
     public function showInfo()

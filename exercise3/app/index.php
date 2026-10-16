@@ -1,7 +1,10 @@
 <?php
 
-require_once __DIR__ . "/Models/Product.php";
-require_once __DIR__ . "/Models/User.php";
+// require_once "./Models/Product.php";
+// require_once "./Models/User.php";
+
+require_once __DIR__."/Models/Product.php";
+require_once __DIR__."/Models/User.php";
 
 use App\Models\Product;
 use App\Models\User;
@@ -24,7 +27,7 @@ $user = new User("Laura", "laura@email.com");
         PRODUCT: <?=  $product->showInfo() ?>
     </p>
         <p>
-        USER: <?=  $product->showInfo() ?>
+        USER: <?=  $user->showInfo() ?>
     </p>
 </body>
 </html>
